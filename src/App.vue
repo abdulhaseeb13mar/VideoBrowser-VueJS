@@ -1,8 +1,11 @@
 <template>
   <div class="container">
     <SearchBar @termChange="onTermChange"></SearchBar>
+    <div class="row">
     <VideoDetail :video="selectedVideo"></VideoDetail>
     <VideoList :videos="videos" @videoSelect="onVideoSelect"></VideoList>
+
+    </div>
   </div>
 </template>
 
@@ -11,7 +14,9 @@ import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
-const API_KEY = "AIzaSyABW_SeHyvy_kDYIIszqpG2KqTiP4PmxOs";
+// const API_KEY = "AIzaSyABW_SeHyvy_kDYIIszqpG2KqTiP4PmxOs"; //abdulhaseeb13mar@gmail.com
+const API_KEY = "AIzaSyA6pO_V0_pVpEHe-HrFLZkbDs80RUBRFXI"; //abdulhaxeeb50@gmail.com
+
 
 export default {
   name: "App",
