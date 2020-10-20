@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input @input="onInput" type="text" />
+    <input @input="onInput" type="text" placeholder="Search videos here..." />
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: "SearchBar",
   methods: {
-    onInput: function(event) {
+    onInput: function (event) {
       this.$emit("termChange", event.target.value);
     },
   },
